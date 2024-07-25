@@ -9,7 +9,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = YOLO('yolov8n.pt').to(device)
 
 # 학습 설정
-data_path = 'snack.yaml' 
+data_path = 'seesaw.yaml' 
 epochs = 1 
 batch_size = 64  
 img_size = 640  
