@@ -1,19 +1,19 @@
 {
-    "train": "/work/dev_sauron/hsu/opencv_test/mart_data/data/images",
-    "val": "/work/dev_sauron/hsu/opencv_test/mart_data/data/images",
-    "nc": 11,
-    "names": {
-      "0": "Pocky",
-      "1": "Kokalcon",
-      "2": "Squrezip",
-      "3": "Hotshirimp",
-      "4": "Concho",
-      "5": "Bananakick",
-      "6": "Goghujang",
-      "7": "Cola",
-      "8": "Contea",
-      "9": "Vita500",
-      "10": "Fantagrape"
-    }
+  "train": "./train/images",
+  "val": "./val/images",
+  "test": "./test/images",
+  "nc": 11,
+  "names": {
+    "0": "Pocky",
+    "1": "Kokalcon",
+    "2": "Squrezip",
+    "3": "Hotshirimp",
+    "4": "Concho",
+    "5": "Bananakick",
+    "6": "Goghujang",
+    "7": "Cola",
+    "8": "Contea",
+    "9": "Vita500",
+    "10": "Fantagrape"
   }
-  
+}
