@@ -1,6 +1,5 @@
 from ultralytics import YOLO
 import torch
-from torch.cuda.amp import GradScaler, autocast
 
 # GPU 사용 설정
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -8,13 +7,10 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # 모델 초기화
 model = YOLO('yolov8n.pt').to(device)
 
-# GradScaler 초기화
-scaler = GradScaler()
-
 # 학습 설정
 data_path = 'snack.yaml' 
 epochs = 1 
-batch_size = 32  
+batch_size = 64  
 img_size = 640  
 
 # 모델 학습
@@ -28,7 +24,7 @@ model.train(
     device=device,
     # cache=True, 
     imgsz=img_size,  
-    amp=True,  
+    amp=False,  
     # pretrained=True 
 )
 
