@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     # 학습 설정
     data_path = 'seesaw.yaml'
-    epochs = 1
+    epochs = 100
     batch_size = 32
 
     # 모델 학습

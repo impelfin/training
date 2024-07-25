@@ -1,6 +1,6 @@
 task: detect
 mode: train
-model: yolov8s.pt
+model: yolov10s.pt
 data: seesaw.yaml
 epochs: 1
 time: null
