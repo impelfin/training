@@ -1,6 +1,0 @@
-train: /Users/lune/Documents/GitHub/project/python/sauron_dataset_snack/train/images
-val: /Users/lune/Documents/GitHub/project/python/sauron_dataset_snack/val/images
-test: /Users/lune/Documents/GitHub/project/python/sauron_dataset_snack/test/images
-
-nc: 6
-names: [0, 1, 2, 3, 4, 5]

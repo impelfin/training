@@ -1,6 +1,0 @@
-train: /work/training/yolov8-train-xavier/train/images
-val: /work/training/yolov8-train-xavier/val/images
-test: /work/training/yolov8-train-xavier/test/images
-
-nc: 6
-names: [0, 1, 2, 3, 4, 5]

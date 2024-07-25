@@ -1,0 +1,6 @@
+train: ../dataset_snack/train/images
+val: ../dataset_snack/val/images
+test: ../dataset_snack/test/images
+
+nc: 6
+names: [0, 1, 2, 3, 4, 5]
