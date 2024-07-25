@@ -1,5 +1,6 @@
 from ultralytics import YOLO
 import torch
+import time
 
 # GPU 사용 설정
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

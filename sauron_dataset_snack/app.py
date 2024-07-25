@@ -16,16 +16,6 @@ if __name__ == '__main__':
     epochs = 300
     batch_size = 32
 
-    # 콜백 함수 정의
-    def my_callback(epoch, logs):
-        if epoch % epochs == 0:
-            model_name = f"model_epoch_{epoch}.pt"
-            model.save(model_name)
-            print(f"Saved model at {model_name}")
-
-    # 콜백 추가
-    model.add_callback('on_epoch_end', my_callback)
-
     # 모델 학습
     train_start = time.time()
     model.train(
