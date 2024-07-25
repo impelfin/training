@@ -13,7 +13,7 @@ scaler = GradScaler()
 
 # 학습 설정
 data_path = 'snack.yaml' 
-epochs = 50 
+epochs = 1 
 batch_size = 32  
 img_size = 640  
 
@@ -26,8 +26,10 @@ model.train(
     name="result",  
     exist_ok=True,  
     device=device,
+    # cache=True, 
     imgsz=img_size,  
-    amp=True  
+    amp=True,  
+    # pretrained=True 
 )
 
 print("학습 완료")
