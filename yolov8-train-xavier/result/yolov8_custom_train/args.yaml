@@ -10,10 +10,10 @@ imgsz: 640
 save: true
 save_period: -1
 cache: false
-device: cpu
+device: cuda
 workers: 8
-project: .
-name: result
+project: result
+name: yolov8_custom_train
 exist_ok: true
 pretrained: true
 optimizer: auto
@@ -103,4 +103,4 @@ erasing: 0.4
 crop_fraction: 1.0
 cfg: null
 tracker: botsort.yaml
-save_dir: result
+save_dir: result/yolov8_custom_train
