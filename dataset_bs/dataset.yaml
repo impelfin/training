@@ -1,12 +1,12 @@
 train:
-  - ./beverage/train/images
-  - ./snack/train/images
+  - /Users/lune/Documents/GitHub/training/dataset_bs/beverage/train/images
+  - /Users/lune/Documents/GitHub/training/dataset_bs/snack/train/images
 val:
-  - ./beverage/valid/images
-  - ./snack/train/images
+  - /Users/lune/Documents/GitHub/training/dataset_bs/beverage/valid/images
+  - /Users/lune/Documents/GitHub/training/dataset_bs/snack/train/images
 test:
-  - ./beverage/test/images
-  - ./snack/train/images
+  - /Users/lune/Documents/GitHub/training/dataset_bs/beverage/test/images
+  - /Users/lune/Documents/GitHub/training/dataset_bs/snack/train/images
 
 nc: 157 # 통합된 클래스 수
 names: [
