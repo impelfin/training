@@ -5,7 +5,7 @@ import time
 if __name__ == '__main__':
     # 모델 초기화
     model = YOLO('yolov8s.pt')
-    # model = YOLO('/Users/lune/Documents/GitHub/project/python/sauron_dataset_new/result/weights/last.pt')
+    # model = YOLO('/Users/lune/Documents/GitHub/training/training_M1_new/result/weights/last.pt')
 
     # torch 데이터 유형, 백엔드 설정
     dtype = torch.float
@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     # 학습 설정
     data_path = 'seesaw.yaml'
-    epochs = 100
+    epochs = 150
     batch_size = 32
 
     # 모델 학습
