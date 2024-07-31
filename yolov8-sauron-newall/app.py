@@ -2,12 +2,12 @@ from ultralytics import YOLO
 import torch
 
 # model = YOLO('yolov8n.pt')
-model = YOLO('best.pt')
+model = YOLO('besti.pt')
 
 device = torch.device("mps")
 
 model.predict(
-   source='./input/in1.png',
+   source='./input/in2.png',
    conf=0.25,
    save=True,
    project=".",
