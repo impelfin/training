@@ -1,2 +1,5 @@
 ## .gitignore
 
+dataset_newall/test
+dataset_newall/train
+dataset_newall/val
