@@ -1,6 +1,5 @@
 from ultralytics import YOLO
 import torch
-import os
 
 # model = YOLO('yolov8n.pt')
 model = YOLO('best.pt')
