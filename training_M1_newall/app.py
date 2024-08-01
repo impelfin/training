@@ -4,7 +4,7 @@ import time
 
 if __name__ == '__main__':
     # 모델 초기화
-    model = YOLO('yolov8n.pt')
+    model = YOLO('yolov8n.yaml')
     # model = YOLO('/Users/lune/Documents/GitHub/training/training_M1_new/result/weights/last.pt')
 
     # torch 데이터 유형, 백엔드 설정

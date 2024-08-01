@@ -6,7 +6,7 @@ import time
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # 모델 초기화
-model = YOLO('yolov8n.pt').to(device)
+model = YOLO('yolov8n.yaml').to(device)
 
 # 학습 설정
 data_path = 'seesaw.yaml' 

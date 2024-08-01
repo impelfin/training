@@ -6,7 +6,7 @@ if __name__ == '__main__':
     multiprocessing.freeze_support()
 
     # 모델 초기화
-    model = YOLO('yolov8n.pt')
+    model = YOLO('yolov8n.yaml')
 
     # GPU 사용 설정
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

@@ -1,0 +1,19 @@
+train: /Users/lune/Documents/GitHub/training/dataset_newall/train/images
+val: /Users/lune/Documents/GitHub/training/dataset_newall/val/images
+test: /Users/lune/Documents/GitHub/training/dataset_newall/test/images
+
+nc: 11
+names:
+  [
+    0_pokey,
+    1_kkokkalkon,
+    2_Squidzip,
+    3_hotshrimpkkang,
+    4_conecho,
+    5_bananakick,
+    6_kochujang,
+    7_cocacola,
+    8_conetea,
+    9_vita500,
+    10_Fantagrape,
+  ]

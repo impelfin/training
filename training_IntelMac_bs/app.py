@@ -5,7 +5,7 @@ import os
 
 if __name__ == '__main__':
     # 모델 초기화
-    model = YOLO('yolov8n.pt')
+    model = YOLO('yolov8n.yaml')
     # model = YOLO('/Users/lune/Documents/GitHub/project/python/datasetTrain/result/weights/last.pt')
 
     # torch 데이터 유형, 백엔드 설정
@@ -43,7 +43,7 @@ if __name__ == '__main__':
         optimizer='auto', 
         cache=True, 
         imgsz=640,
-        pretrained=True    
+        # pretrained=True    
     )
     train_end = time.time()
     
