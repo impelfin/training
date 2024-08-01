@@ -1,18 +1,16 @@
+import os
 from ultralytics import YOLO
-import torch
 
-# model = YOLO('yolov8n.pt')
+os.environ["PYTORCH_ENABLE_MPS_FALLBACK"] = "1"
+
+# Load the model
 model = YOLO('best.pt')
 
-device = torch.device("mps")
-
-model.predict(
-   source='./input/in1.png',
-   conf=0.25,
-   save=True,
-   project=".",
-   name="result",
-   exist_ok=True,
-   device=device
+results = model.predict(
+    source='./input/in1.png',
+    conf=0.25,
+    save=True,
+    project=".",
+    name="result",
+    exist_ok=True
 )
-
