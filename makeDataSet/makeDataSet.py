@@ -2,7 +2,7 @@ import os
 
 img_folder = 'images/'
 label_folder = 'labels/'
-new_class_num = 5
+new_class_num = 1
 
 def rename_and_update_files(new_class_num):
     # Rename files in img folder
