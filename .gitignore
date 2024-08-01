@@ -1,4 +1,6 @@
 ## .gitignore
 
 dataset_newall
-dataset_avengers
+dataset_avengers/train
+dataset_avengers/val
+dataset_avengers/test
