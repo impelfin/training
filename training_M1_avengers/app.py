@@ -12,7 +12,7 @@ if __name__ == '__main__':
     device = torch.device("mps")
 
     # 학습 설정
-    data_path = 'seesaw.yaml'
+    data_path = 'data.yaml'
     epochs = 10
     batch_size = 32
 
