@@ -1,0 +1,6 @@
+train: /Users/lune/Documents/GitHub/training/dataset_avengers/train/images
+val: /Users/lune/Documents/GitHub/training/dataset_avengers/val/images
+test: /Users/lune/Documents/GitHub/training/dataset_avengers/test/images
+
+nc: 2
+names: ["Orange", "Coca-Cola"]
