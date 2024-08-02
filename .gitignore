@@ -1,5 +1,7 @@
 ## .gitignore
 
+.idea
+
 # dataset_newall
 dataset_newall/train
 dataset_newall/val
