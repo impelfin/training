@@ -2,8 +2,8 @@ import os
 import json
 from PIL import Image
 
-def yolo_to_coreml(images_folder, labels_folder, output_file):
-    annotations = []
+def yolo_to_custom_format(images_folder, labels_folder, output_file):
+    data = []
 
     for image_file in os.listdir(images_folder):
         if image_file.endswith(".jpg") or image_file.endswith(".png"):
@@ -34,14 +34,14 @@ def yolo_to_coreml(images_folder, labels_folder, output_file):
                     }
                     image_annotations.append(annotation)
 
-                annotations.append({
-                    "image": image_file,
+                data.append({
+                    "imagefilename": image_file,
                     "annotations": image_annotations
                 })
 
     # JSON 파일로 어노테이션 작성
     with open(output_file, "w") as f:
-        json.dump({"annotations": annotations}, f, indent=4)
+        json.dump(data, f, indent=4)
 
     print(f"Annotations successfully written to {output_file}")
 
@@ -51,4 +51,4 @@ labels_folder = "labels"  # 라벨 폴더 경로
 output_file = "annotations.json"  # 출력 JSON 파일 경로
 
 # 변환 실행
-yolo_to_coreml(images_folder, labels_folder, output_file)
+yolo_to_custom_format(images_folder, labels_folder, output_file)
