@@ -1,4 +1,4 @@
-coremltools==4.0.0
+coremltools==4.0
 onnx==1.13.0
 onnxconverter-common==1.7.0
 onnxruntime==1.12.1
@@ -6,3 +6,4 @@ numpy==1.23.0
 torch==1.12.1
 protobuf>=3.20.2
 onnxmltools==1.6.0
+onnx2pytorch

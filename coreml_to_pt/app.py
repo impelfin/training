@@ -23,10 +23,10 @@ def convert_coreml_to_pt(coreml_model_path, onnx_model_path, pytorch_model_path)
     # Save PyTorch model
     torch.save(pytorch_model.state_dict(), pytorch_model_path)
 
-# 파일 경로 설정
+# File paths
 coreml_model_path = 'sauron_snack.mlmodel'
 onnx_model_path = 'sauron_snack.onnx'
 pytorch_model_path = 'sauron_snack.pt'
 
-# 변환 함수 실행
+# Run the conversion
 convert_coreml_to_pt(coreml_model_path, onnx_model_path, pytorch_model_path)
