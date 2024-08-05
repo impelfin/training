@@ -1,26 +1,26 @@
-# Use official Python image from the Docker Hub
 FROM python:3.8-slim
 
-# Set the working directory
+# 작업 디렉토리 설정
 WORKDIR /app
 
-# Install build-essential for g++ and other dependencies
-RUN apt-get update && apt-get install -y build-essential
+# 의존성 설치
+RUN pip install --upgrade pip \
+    && pip install coremltools==4.0.0 \
+    && pip install onnx==1.12.0 \
+    && pip install onnxconverter-common==1.14.0 \
+    && pip install onnxruntime==1.12.1 \
+    && pip install numpy==1.23.0 \
+    && pip install torch==1.12.1 \
+    && pip install protobuf==3.20.1 \
+    && pip install onnx2pytorch \
+    && pip install onnxmltools
 
-# Install dependencies
-RUN pip install numpy==1.19.5 cython
-RUN pip install scipy
-RUN pip install scikit-learn==0.19.2
+# 앱 복사
+COPY app.py .
+COPY sauron_snack.mlmodel .
 
-# Install specific versions of PyTorch and torchvision
-RUN pip install torch==1.9.0 torchvision==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
+# 환경 변수 설정
+ENV PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
 
-# Install coremltools and other related tools with adjusted protobuf version
-RUN pip install protobuf==3.20.3
-RUN pip install coremltools==5.1 onnxmltools==1.7.0 onnx2pytorch==0.4.1
-
-# Copy the current directory contents into the container at /app
-COPY . /app
-
-# Run the script
+# 명령어 설정
 CMD ["python", "app.py"]
