@@ -57,6 +57,8 @@ def process_image(image_path, model):
     # 예측 실행
     try:
         results = model.predict(input_data)
+        print("-" * 70)
+        print("input filename : ", image_path)
         print("coordinates : ", results['coordinates'])  
         print("confidence : ", np.round(results['confidence'], 3))
     except Exception as e:
@@ -110,4 +112,5 @@ for filename in os.listdir(input_folder):
         if result_image:
             result_image.save(output_path)
 
+print("-" * 70)
 print("모든 이미지를 처리하고 결과를 저장했습니다.")
