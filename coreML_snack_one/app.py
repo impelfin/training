@@ -18,27 +18,27 @@ if not os.path.exists(output_folder):
 
 # 클래스 이름 리스트 (모델에 맞게 수정 필요)
 class_labels = [
-    'crown_BigPie_Strawberry_324G',
-    'crown_ChocoHaim_142G',
-    'crown_Concho_66G',
-    'crown_Potto_Cheese_Tart_322G',
-    'haetae_Guun_Gamja_162G',
-    'haetae_HoneyButterChip_38G',
-    'haetae_Masdongsan_90G',
-    'haetae_Osajjeu_60G',
-    'haetae_Oyeseu_360G',
-    'lotte_kkokkalkon_gosohanmas_72G',
-    'nongshim_Alsaeuchip_68G',
-    'nongshim_Banana_Kick_75G',
-    'nongshim_ChipPotato_Original_125G',
-    'nongshim_Ojingeojip_83G',
-    'orion_Chocolate_Chip_Cookies_256G',
-    'orion_Diget_tongmil_28_194G',
-    'orion_Diget_Choco_312G',
-     'orion_Fresh_Berry_336G',
-    'orion_Gosomi_80G',
-    'orion_Pocachip_Original_66G',
-    'orion_chokchokhan_Chocochip_240G',    
+    'crown_BigPie_Strawberry_324G',         # 0
+    'crown_ChocoHaim_142G',                 # 1
+    'crown_Concho_66G',                     # 2
+    'crown_Potto_Cheese_Tart_322G',         # 3
+    'haetae_Guun_Gamja_162G',               # 4  
+    'haetae_HoneyButterChip_38G',           # 5
+    'haetae_Masdongsan_90G',                # 6
+    'haetae_Osajjeu_60G',                   # 7    
+    'haetae_Oyeseu_360G',                   # 8
+    'lotte_kkokkalkon_gosohanmas_72G',      # 9
+    'nongshim_Alsaeuchip_68G',              # 10
+    'nongshim_Banana_Kick_75G',             # 11
+    'nongshim_ChipPotato_Original_125G',    # 12 
+    'nongshim_Ojingeojip_83G',              # 13
+    'orion_Chocolate_Chip_Cookies_256G',    # 14
+    'orion_Diget_tongmil_28_194G',          # 15
+    'orion_Diget_Choco_312G',               # 16
+     'orion_Fresh_Berry_336G',              # 17
+    'orion_Gosomi_80G',                     # 18
+    'orion_Pocachip_Original_66G',          # 19
+    'orion_chokchokhan_Chocochip_240G',     # 20 
 ]
 
 # 이미지 처리 함수
