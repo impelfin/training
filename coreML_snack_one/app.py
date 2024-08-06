@@ -73,7 +73,7 @@ def process_image(image_path, model):
         # 가장 높은 확률의 클래스 선택
         max_confidence_index = np.argmax(confidences[i])
         
-        print(max_confidence_index)
+        print("predicted class : ", max_confidence_index)
 
         # 클래스 인덱스가 올바른지 확인
         if max_confidence_index < len(class_labels):
