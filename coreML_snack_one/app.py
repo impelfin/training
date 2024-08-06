@@ -7,7 +7,7 @@ import os
 model = ct.models.MLModel('sauron_snack.mlmodel')
 
 # 모델이 허용하는 입력 크기
-input_width, input_height = 416, 416  # 여기에 모델이 허용하는 크기를 설정합니다
+input_width, input_height = 416, 416 
 
 # 입력 및 출력 디렉토리 설정
 input_folder = 'input'
