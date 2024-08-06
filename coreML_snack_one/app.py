@@ -57,7 +57,8 @@ def process_image(image_path, model):
     # 예측 실행
     try:
         results = model.predict(input_data)
-        # print(results)  # 예측 결과 출력
+        print("coordinates : ", results['coordinates'])  
+        print("confidence : ", np.round(results['confidence'], 3))
     except Exception as e:
         print(f"Error in model prediction: {e}")
         return None
@@ -72,6 +73,8 @@ def process_image(image_path, model):
         # 가장 높은 확률의 클래스 선택
         max_confidence_index = np.argmax(confidences[i])
         
+        print(max_confidence_index)
+
         # 클래스 인덱스가 올바른지 확인
         if max_confidence_index < len(class_labels):
             score = confidences[i][max_confidence_index]
