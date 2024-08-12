@@ -1,0 +1,13 @@
+cffi==1.16.0
+enum34==1.1.10
+h5py==3.11.0
+Keras==2.2.4
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.2
+numpy==2.0.1
+plaidml==0.7.0
+plaidml-keras==0.7.0
+pycparser==2.22
+PyYAML==6.0.1
+scipy==1.13.1
+six==1.16.0
